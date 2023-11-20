@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <title>Pizza Order Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Pizza Order Form</h1>
+        
+        <!-- Display Student ID and Name using JavaScript -->
+        <p id="student-info"></p>
+
+        <!-- Pizza Order Form -->
+        <form id="pizza-form">
+            <label for="pizza-size">Pizza Size:</label>
+            <select id="pizza-size" name="pizza-size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="toppings">Toppings:</label>
+            <select id="toppings" name="toppings" multiple>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="mushrooms">Mushrooms</option>
+                <option value="onions">Onions</option>
+                <option value="sausage">Sausage</option>
+            </select>
+
+            <label for="cold-drinks">Cold Drinks:</label>
+            <select id="cold-drinks" name="cold-drinks" multiple>
+                <option value="cola">Cola</option>
+                <option value="orange-juice">Orange Juice</option>
+            </select>
+
+            <label for="cheese-burst"><br>Cheese Burst:</label>
+            <select id="cheese-burst" name="cheese-burst">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="pizza-type">Pizza Type:</label>
+            <select id="pizza-type" name="pizza-type">
+                <option value="vegetarian">Vegetarian</option>
+                <option value="non-vegetarian">Non-Vegetarian</option>
+            </select>
+
+            <button type="button" onclick="submitOrder()">Order</button>
+        </form>
+
+        <!-- Display Pizza Description using JavaScript -->
+        <div id="pizza-description"></div>
+    </div>
+</body>
+</html>
